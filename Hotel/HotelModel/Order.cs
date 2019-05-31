@@ -15,5 +15,8 @@ namespace HotelModel
         public decimal Sum { get; set; }
         public OrderStatus Status { get; set; }
         public DateTime DateCreate { get; set; }
+        public DateTime? DateImplement { get; set; }
+        public virtual Customer Customer { get; set; }
+        public virtual HRoom HRoom { get; set; }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HotelRoom;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,5 +15,7 @@ namespace HotelModel
         public int Count { get; set; }
         public string Window { get; set; }
         public int Floor { get; set; }
+        public virtual HRoom HRoom { get; set; }
+        public virtual Room Room { get; set; }
     }
 }

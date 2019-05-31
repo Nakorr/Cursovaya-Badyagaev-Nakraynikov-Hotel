@@ -13,6 +13,7 @@ namespace HotelModel
         public string CustomerLogin { get; set; }
         public string CustomerPassword { get; set; }
         public string CustomerMail { get; set; }
+        public virtual List<Order> Orders { get; set; }
 
     }
 }

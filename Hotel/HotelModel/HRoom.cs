@@ -11,5 +11,7 @@ namespace HotelModel
         public int Id { get; set; }
         public string HRoomName { get; set; }
         public decimal Price { get; set; }
+        public virtual List<Design> Designs { get; set; }
+        public virtual List<Order> Orders { get; set; }
     }
 }
